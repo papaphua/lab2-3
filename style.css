@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    font-weight: bold;
+    background-color: white;
+    border: 3px solid rgb(89, 125, 194);
+    border-radius: 10px;
+}
+
+button pre {
+    pointer-events: none; 
+}
+
+button:active {
+    background-color: #005cc8;
+}
+
+ul .task:last-child .downButton   { 
+    background-color: darkgrey;
+    pointer-events: none; 
+}
+
+ul .task:nth-of-type(2) .upButton   { 
+    background-color: darkgrey;
+    pointer-events: none; 
+}
+
+input[type="checkbox"] {
+    width: 35px;
+    height: 35px;
+}
+
+input[type="text"] {
+    text-align: center;
+    border: 3px solid rgb(89, 125, 194);
+    border-radius: 10px;
+}
+
+input[type="text"]:focus::placeholder {
+    color: transparent;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 550px;
+    min-height: 600px;
+    height: auto;
+    background-color: cornflowerblue;
+    border: 6px solid rgb(89, 125, 194);
+    border-radius: 24px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .addMenu {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .taskManager {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+nav .taskManager button {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section h2 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;  
+}

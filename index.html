@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+
+        <header>
+            <h1>
+                To Do List
+            </h1>
+            <div class="info" style="margin-left:20px;margin-top:20px;margin-bottom:20px;">
+                Total: <span class="total">0</span>
+                <br>
+                Finsihed: <span class="finished">0</span>
+                <br>
+                Unfinished: <span class="unfinished">0</span>
+            </div>
+        </header>
+    
+        <nav>
+
+            <div class="addMenu">
+                <input type="checkbox" disabled>
+                <input class="inputField" type="text" placeholder="Enter task name">
+                <button class="addButton">Add</button>
+            </div>
+
+            <div class="taskManager">
+                <button class="clearButton">Clear</button>
+                <button class="sortButton">Sort</button>
+            </div>
+
+        </nav>
+    
+        <section>
+            <h2>
+                Tasks
+            </h2>
+            <ul>
+                <!-- hidden template-->
+                <li style="display: none">
+                    <input type="checkbox">
+                    <input type="text">
+                    <button class="delButton">Delete</button>
+                    <button class="upButton"><pre> ↑ </pre></button>
+                    <button class="downButton"><pre> ↓ </pre></button>
+                </li>
+            </ul>
+        </section>
+        
+    </main>
+    <script src="todolist-behavior.js"></script>
+</body>
+</html>
